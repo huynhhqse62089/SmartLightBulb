@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Smart Light Bulb</string>
+    <string name="thanks_string">Thank you for using the app</string>
+    <string name="choose_language_text">Please choose language to continue</string>
+    <string name="btn_continue">Continue</string>
+    <string name="btn_scan">Scan</string>
+    <string name="scan_bulb_title">Scan Light Bulbs</string>
+    <string name="title_devices">Các thiết bị hiện có</string>
+    <string name="pair_devices">Các thiết bị đã ghép đôi</string>
+
+</resources>

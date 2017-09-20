@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <include
+        android:id="@+id/mCustomToolbar"
+        layout="@layout/customtoolbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="37sp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="9"
+            android:background="@color/color_table_title"
+            android:text="@string/title_devices"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btn_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_scan"
+            android:onClick="btnScan"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+    <ListView
+        android:layout_below="@id/btn_scan"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:id="@+id/lvNewDevices"
+        android:layout_weight="0.25"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/btn_scan"
+        android:background="#fff"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/pairLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="37sp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="9"
+            android:background="@color/color_table_title"
+            android:text="@string/pair_devices"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textAlignment="center" />
+    </LinearLayout>
+    <ListView
+        android:layout_below="@id/pairLayout"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:id="@+id/lvPairDevices"
+        android:layout_weight="0.25"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginTop="5sp"/>
+
+</LinearLayout>

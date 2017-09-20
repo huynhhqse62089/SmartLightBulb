@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="45dp"
+    android:background="@drawable/corners"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.04"
+        android:paddingTop="3dp"
+        android:singleLine="true"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/titleTextView"
+        android:background="@color/color_table_title"
+        />
+
+    <TextView
+        android:id="@+id/macAddress"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/titleTextView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/titleTextView"
+        android:layout_below="@+id/titleTextView"
+        android:text=""
+        android:textSize="15dp"
+        />
+
+    <ImageView
+        android:id="@+id/statusImage"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:layout_toRightOf="@+id/line"
+        android:foregroundGravity="center"
+        android:src="@drawable/x_480"
+        android:layout_marginLeft="40sp"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>
